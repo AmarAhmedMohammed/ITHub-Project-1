@@ -1,3 +1,264 @@
-.name{
-    color: red;
+body {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.space {
+  margin-top: 70px;
+  font-style: normal;
+  font-family: Roboto Slab;
+  font-size: 20px;
+  line-height: 48px;
+  font-weight: 700;
+  color: #000000;
+}
+.late {
+  text-align: center;
+  margin-top: -25px;
+  margin-left: 5px;
+  text-decoration: none;
+  color: #6c757d;
+}
+.container {
+  display: grid;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+  width: 100%;
+}
+.image-row img {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 9px solid #e1e4e4;
+}
+
+.image-row {
+  display: flex;
+  gap: 160px;
+  justify-content: center;
+}
+.lead,
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cons {
+  background-color: white;
+  display: flex;
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.cons img {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+.note {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  margin: 5px auto;
+  gap: 130px;
+}
+.note img {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+}
+.microsoft {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.ibm {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+.col1,
+.col2 {
+  display: flex;
+  gap: 120px;
+}
+
+.text {
+  margin-top: 15px;
+}
+.text h2 {
+  margin: 5px 0;
+  font-size: 24px;
+  color: black;
+}
+.text h4 {
+  margin: 0;
+  font-size: 17px;
+  color: #6c757d;
+  margin-bottom: 40px;
+  font-family: Roboto Slab;
+  line-height: 28px;
+}
+p {
+  color: #6c757d;
+  margin-bottom: 30px;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+}
+@media (max-width: 1024px) {
+  .image-row {
+    gap: 100px;
+  }
+  .note {
+    gap: 80px;
+  }
+  .text {
+    margin-bottom: 30px;
+  }
+  .cons {
+    height: auto;
+    padding: 25px 0;
+  }
+  .note img {
+    width: 150px;
+    height: 150px;
+  }
+  .microsoft {
+    width: 150px;
+    height: 150px;
+  }
+  .ibm {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 900px) {
+  .image-row {
+    gap: 80px;
+  }
+  .text {
+    margin-bottom: 25px;
+  }
+  .note {
+    gap: 60px;
+  }
+  .cons {
+    height: auto;
+    padding: 20px 0;
+  }
+  .note img {
+    width: 120px;
+    height: 120px;
+  }
+  .microsoft {
+    width: 180px;
+    height: 180px;
+  }
+  .ibm {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .image-row {
+    flex-direction: column;
+    gap: 80px;
+  }
+  .text {
+    margin-bottom: 20px;
+  }
+  .note {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .cons {
+    height: auto;
+    padding: 20px 0;
+    display: block;
+    width: 100%;
+  }
+  .col1 {
+    display: block;
+    gap: 200px;
+  }
+  .col2 {
+    display: block;
+    gap: 150px;
+  }
+  .microsoft {
+    margin-right: 70px;
+  }
+  .ibm {
+    margin-left: 70px;
+  }
+}
+@media (max-width: 560px) {
+  .col1,
+  .col2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .image-row img {
+    width: 150px;
+    height: 150px;
+  }
+  .text {
+    margin-top: 10px;
+  }
+  .cons {
+    height: auto;
+    padding: 30px 0;
+  }
+  .note img {
+    width: 100px;
+    height: 100px;
+  }
+  .microsoft {
+    width: 100px;
+    height: 100px;
+  }
+  .ibm {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 320px) {
+  .image-row img {
+    width: 120px;
+    height: 120px;
+  }
+  .text h2 {
+    font-size: 20px;
+  }
+  .text h4 {
+    font-size: 15px;
+  }
+  .note img {
+    width: 80px;
+    height: 80px;
+  }
+  .microsoft {
+    width: 80px;
+    height: 80px;
+  }
+  .ibm {
+    width: 80px;
+    height: 80px;
+  }
 }
